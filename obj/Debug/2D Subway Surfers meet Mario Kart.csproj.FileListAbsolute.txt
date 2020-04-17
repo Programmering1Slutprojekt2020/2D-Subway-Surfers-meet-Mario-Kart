@@ -1,0 +1,9 @@
+C:\Users\erikm\source\repos\2D Subway Surfers meet Mario Kart\2D Subway Surfers meet Mario Kart\bin\Debug\2D Subway Surfers meet Mario Kart.exe.config
+C:\Users\erikm\source\repos\2D Subway Surfers meet Mario Kart\2D Subway Surfers meet Mario Kart\bin\Debug\2D Subway Surfers meet Mario Kart.exe
+C:\Users\erikm\source\repos\2D Subway Surfers meet Mario Kart\2D Subway Surfers meet Mario Kart\bin\Debug\2D Subway Surfers meet Mario Kart.pdb
+C:\Users\erikm\source\repos\2D Subway Surfers meet Mario Kart\2D Subway Surfers meet Mario Kart\obj\Debug\2D Subway Surfers meet Mario Kart.csprojAssemblyReference.cache
+C:\Users\erikm\source\repos\2D Subway Surfers meet Mario Kart\2D Subway Surfers meet Mario Kart\obj\Debug\_2D_Subway_Surfers_meet_Mario_Kart.Form1.resources
+C:\Users\erikm\source\repos\2D Subway Surfers meet Mario Kart\2D Subway Surfers meet Mario Kart\obj\Debug\_2D_Subway_Surfers_meet_Mario_Kart.Properties.Resources.resources
+C:\Users\erikm\source\repos\2D Subway Surfers meet Mario Kart\2D Subway Surfers meet Mario Kart\obj\Debug\2D Subway Surfers meet Mario Kart.csproj.GenerateResource.cache
+C:\Users\erikm\source\repos\2D Subway Surfers meet Mario Kart\2D Subway Surfers meet Mario Kart\obj\Debug\2D Subway Surfers meet Mario Kart.exe
+C:\Users\erikm\source\repos\2D Subway Surfers meet Mario Kart\2D Subway Surfers meet Mario Kart\obj\Debug\2D Subway Surfers meet Mario Kart.pdb
