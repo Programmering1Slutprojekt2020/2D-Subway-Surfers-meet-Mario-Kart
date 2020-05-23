@@ -17,6 +17,15 @@ namespace _2D_Subway_Surfers_meet_Mario_Kart
             InitializeComponent();
         }
 
+        int gamespead = 1;
+        int speedcache = 0;
+
+
+
+
+
+
+
         private void Form1_KeyDown(object sender, KeyEventArgs e)
         {
             if (e.KeyCode == Keys.A || e.KeyCode == Keys.Left)
@@ -29,6 +38,31 @@ namespace _2D_Subway_Surfers_meet_Mario_Kart
                 if (Car.Left < 200)
                 Car.Left += 55;
             }
+        }
+
+        
+
+
+        void Movec()
+        {
+            Cone1.Top += gamespead;
+            Cone2.Top++;
+            Cone3.Top++;
+        }
+
+
+
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            Distance.Text = ((gamespead*speedcache/10) + " m"); // skriver ut m
+            if (speedcache % 200 == 0)
+            {
+                gamespead++;
+
+            }
+            speedcache++;
+            Movec();
         }
     }
 }

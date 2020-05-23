@@ -28,8 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            this.pictureBox9 = new System.Windows.Forms.PictureBox();
+            this.Cone1 = new System.Windows.Forms.PictureBox();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
@@ -39,7 +40,12 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.Car = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
+            this.Cone2 = new System.Windows.Forms.PictureBox();
+            this.Cone3 = new System.Windows.Forms.PictureBox();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.timer2 = new System.Windows.Forms.Timer(this.components);
+            this.Distance = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.Cone1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
@@ -49,17 +55,19 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Car)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Cone2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Cone3)).BeginInit();
             this.SuspendLayout();
             // 
-            // pictureBox9
+            // Cone1
             // 
-            this.pictureBox9.Image = global::_2D_Subway_Surfers_meet_Mario_Kart.Properties.Resources.cone1;
-            this.pictureBox9.Location = new System.Drawing.Point(110, 257);
-            this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.Size = new System.Drawing.Size(40, 50);
-            this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox9.TabIndex = 9;
-            this.pictureBox9.TabStop = false;
+            this.Cone1.Image = global::_2D_Subway_Surfers_meet_Mario_Kart.Properties.Resources.cone1;
+            this.Cone1.Location = new System.Drawing.Point(56, 46);
+            this.Cone1.Name = "Cone1";
+            this.Cone1.Size = new System.Drawing.Size(40, 50);
+            this.Cone1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.Cone1.TabIndex = 9;
+            this.Cone1.TabStop = false;
             // 
             // pictureBox8
             // 
@@ -145,16 +153,56 @@
             this.Car.TabIndex = 8;
             this.Car.TabStop = false;
             // 
+            // Cone2
+            // 
+            this.Cone2.Image = global::_2D_Subway_Surfers_meet_Mario_Kart.Properties.Resources.cone1;
+            this.Cone2.Location = new System.Drawing.Point(166, 103);
+            this.Cone2.Name = "Cone2";
+            this.Cone2.Size = new System.Drawing.Size(40, 50);
+            this.Cone2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.Cone2.TabIndex = 10;
+            this.Cone2.TabStop = false;
+            // 
+            // Cone3
+            // 
+            this.Cone3.Image = global::_2D_Subway_Surfers_meet_Mario_Kart.Properties.Resources.cone1;
+            this.Cone3.Location = new System.Drawing.Point(276, 255);
+            this.Cone3.Name = "Cone3";
+            this.Cone3.Size = new System.Drawing.Size(40, 50);
+            this.Cone3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.Cone3.TabIndex = 11;
+            this.Cone3.TabStop = false;
+            // 
+            // timer1
+            // 
+            this.timer1.Enabled = true;
+            this.timer1.Interval = 1;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
+            // Distance
+            // 
+            this.Distance.AutoSize = true;
+            this.Distance.BackColor = System.Drawing.Color.Transparent;
+            this.Distance.Font = new System.Drawing.Font("Comic Sans MS", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Distance.Location = new System.Drawing.Point(133, 0);
+            this.Distance.Name = "Distance";
+            this.Distance.Size = new System.Drawing.Size(110, 38);
+            this.Distance.TabIndex = 12;
+            this.Distance.Text = "0000 m";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Gray;
             this.ClientSize = new System.Drawing.Size(369, 561);
-            this.Controls.Add(this.pictureBox9);
+            this.Controls.Add(this.Distance);
+            this.Controls.Add(this.pictureBox6);
+            this.Controls.Add(this.Cone3);
+            this.Controls.Add(this.Cone2);
+            this.Controls.Add(this.Cone1);
             this.Controls.Add(this.pictureBox8);
             this.Controls.Add(this.pictureBox7);
-            this.Controls.Add(this.pictureBox6);
             this.Controls.Add(this.pictureBox5);
             this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.pictureBox3);
@@ -164,7 +212,7 @@
             this.Name = "Form1";
             this.Text = "Form1";
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyDown);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Cone1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
@@ -174,7 +222,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Car)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Cone2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Cone3)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -189,7 +240,12 @@
         private System.Windows.Forms.PictureBox pictureBox7;
         private System.Windows.Forms.PictureBox pictureBox8;
         private System.Windows.Forms.PictureBox Car;
-        private System.Windows.Forms.PictureBox pictureBox9;
+        private System.Windows.Forms.PictureBox Cone1;
+        private System.Windows.Forms.PictureBox Cone2;
+        private System.Windows.Forms.PictureBox Cone3;
+        private System.Windows.Forms.Timer timer2;
+        public System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Label Distance;
     }
 }
 
