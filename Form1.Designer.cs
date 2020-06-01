@@ -30,47 +30,178 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.Distance = new System.Windows.Forms.Label();
+            this.timer2 = new System.Windows.Forms.Timer(this.components);
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.Cone0 = new System.Windows.Forms.PictureBox();
+            this.Cone7 = new System.Windows.Forms.PictureBox();
+            this.Cone5 = new System.Windows.Forms.PictureBox();
+            this.Cone6 = new System.Windows.Forms.PictureBox();
+            this.Cone4 = new System.Windows.Forms.PictureBox();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.Cone3 = new System.Windows.Forms.PictureBox();
+            this.Cone2 = new System.Windows.Forms.PictureBox();
             this.Cone1 = new System.Windows.Forms.PictureBox();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.Car = new System.Windows.Forms.PictureBox();
-            this.Cone2 = new System.Windows.Forms.PictureBox();
-            this.Cone3 = new System.Windows.Forms.PictureBox();
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.Distance = new System.Windows.Forms.Label();
-            this.Cone4 = new System.Windows.Forms.PictureBox();
-            this.Cone6 = new System.Windows.Forms.PictureBox();
-            this.Cone5 = new System.Windows.Forms.PictureBox();
-            this.Cone7 = new System.Windows.Forms.PictureBox();
-            this.timer2 = new System.Windows.Forms.Timer(this.components);
-            this.Cone0 = new System.Windows.Forms.PictureBox();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.Cone0)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Cone7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Cone5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Cone6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Cone4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Cone3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Cone2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Cone1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Car)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Cone2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Cone3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Cone4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Cone6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Cone5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Cone7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Cone0)).BeginInit();
             this.SuspendLayout();
+            // 
+            // timer1
+            // 
+            this.timer1.Enabled = true;
+            this.timer1.Interval = 15;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
+            // Distance
+            // 
+            this.Distance.BackColor = System.Drawing.Color.Transparent;
+            this.Distance.Font = new System.Drawing.Font("Comic Sans MS", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Distance.Location = new System.Drawing.Point(100, 0);
+            this.Distance.Name = "Distance";
+            this.Distance.Size = new System.Drawing.Size(170, 38);
+            this.Distance.TabIndex = 12;
+            this.Distance.Text = "0000";
+            this.Distance.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // timer2
+            // 
+            this.timer2.Enabled = true;
+            this.timer2.Interval = 50;
+            this.timer2.Tick += new System.EventHandler(this.timer2_Tick);
+            // 
+            // panel1
+            // 
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(105, 40);
+            this.panel1.TabIndex = 18;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.Orange;
+            this.panel2.Location = new System.Drawing.Point(45, 84);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(280, 343);
+            this.panel2.TabIndex = 19;
+            this.panel2.Visible = false;
+            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
+            // 
+            // label1
+            // 
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Comic Sans MS", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(259, -1);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(111, 41);
+            this.label1.TabIndex = 20;
+            this.label1.Text = "Press Enter to \r\nRestart";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // Cone0
+            // 
+            this.Cone0.BackColor = System.Drawing.Color.Red;
+            this.Cone0.Location = new System.Drawing.Point(220, 162);
+            this.Cone0.Name = "Cone0";
+            this.Cone0.Size = new System.Drawing.Size(40, 80);
+            this.Cone0.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.Cone0.TabIndex = 17;
+            this.Cone0.TabStop = false;
+            // 
+            // Cone7
+            // 
+            this.Cone7.BackColor = System.Drawing.Color.Red;
+            this.Cone7.Location = new System.Drawing.Point(110, 356);
+            this.Cone7.Name = "Cone7";
+            this.Cone7.Size = new System.Drawing.Size(40, 80);
+            this.Cone7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.Cone7.TabIndex = 16;
+            this.Cone7.TabStop = false;
+            // 
+            // Cone5
+            // 
+            this.Cone5.BackColor = System.Drawing.Color.Red;
+            this.Cone5.Location = new System.Drawing.Point(275, 424);
+            this.Cone5.Name = "Cone5";
+            this.Cone5.Size = new System.Drawing.Size(40, 80);
+            this.Cone5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.Cone5.TabIndex = 15;
+            this.Cone5.TabStop = false;
+            // 
+            // Cone6
+            // 
+            this.Cone6.BackColor = System.Drawing.Color.Red;
+            this.Cone6.Location = new System.Drawing.Point(55, 512);
+            this.Cone6.Name = "Cone6";
+            this.Cone6.Size = new System.Drawing.Size(40, 80);
+            this.Cone6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.Cone6.TabIndex = 14;
+            this.Cone6.TabStop = false;
+            // 
+            // Cone4
+            // 
+            this.Cone4.BackColor = System.Drawing.Color.Red;
+            this.Cone4.Location = new System.Drawing.Point(55, 290);
+            this.Cone4.Name = "Cone4";
+            this.Cone4.Size = new System.Drawing.Size(40, 80);
+            this.Cone4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.Cone4.TabIndex = 13;
+            this.Cone4.TabStop = false;
+            // 
+            // pictureBox6
+            // 
+            this.pictureBox6.BackColor = System.Drawing.Color.White;
+            this.pictureBox6.Location = new System.Drawing.Point(210, 0);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(5, 562);
+            this.pictureBox6.TabIndex = 5;
+            this.pictureBox6.TabStop = false;
+            // 
+            // Cone3
+            // 
+            this.Cone3.BackColor = System.Drawing.Color.Red;
+            this.Cone3.Location = new System.Drawing.Point(275, 225);
+            this.Cone3.Name = "Cone3";
+            this.Cone3.Size = new System.Drawing.Size(40, 80);
+            this.Cone3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.Cone3.TabIndex = 11;
+            this.Cone3.TabStop = false;
+            // 
+            // Cone2
+            // 
+            this.Cone2.BackColor = System.Drawing.Color.Red;
+            this.Cone2.Location = new System.Drawing.Point(275, 25);
+            this.Cone2.Name = "Cone2";
+            this.Cone2.Size = new System.Drawing.Size(40, 80);
+            this.Cone2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.Cone2.TabIndex = 10;
+            this.Cone2.TabStop = false;
             // 
             // Cone1
             // 
@@ -99,15 +230,6 @@
             this.pictureBox7.Size = new System.Drawing.Size(5, 562);
             this.pictureBox7.TabIndex = 6;
             this.pictureBox7.TabStop = false;
-            // 
-            // pictureBox6
-            // 
-            this.pictureBox6.BackColor = System.Drawing.Color.White;
-            this.pictureBox6.Location = new System.Drawing.Point(210, 0);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(5, 562);
-            this.pictureBox6.TabIndex = 5;
-            this.pictureBox6.TabStop = false;
             // 
             // pictureBox5
             // 
@@ -165,128 +287,6 @@
             this.Car.TabIndex = 8;
             this.Car.TabStop = false;
             // 
-            // Cone2
-            // 
-            this.Cone2.BackColor = System.Drawing.Color.Red;
-            this.Cone2.Location = new System.Drawing.Point(275, 25);
-            this.Cone2.Name = "Cone2";
-            this.Cone2.Size = new System.Drawing.Size(40, 80);
-            this.Cone2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.Cone2.TabIndex = 10;
-            this.Cone2.TabStop = false;
-            // 
-            // Cone3
-            // 
-            this.Cone3.BackColor = System.Drawing.Color.Red;
-            this.Cone3.Location = new System.Drawing.Point(275, 225);
-            this.Cone3.Name = "Cone3";
-            this.Cone3.Size = new System.Drawing.Size(40, 80);
-            this.Cone3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.Cone3.TabIndex = 11;
-            this.Cone3.TabStop = false;
-            // 
-            // timer1
-            // 
-            this.timer1.Enabled = true;
-            this.timer1.Interval = 15;
-            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
-            // 
-            // Distance
-            // 
-            this.Distance.BackColor = System.Drawing.Color.Transparent;
-            this.Distance.Font = new System.Drawing.Font("Comic Sans MS", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Distance.Location = new System.Drawing.Point(100, 0);
-            this.Distance.Name = "Distance";
-            this.Distance.Size = new System.Drawing.Size(170, 38);
-            this.Distance.TabIndex = 12;
-            this.Distance.Text = "0000";
-            this.Distance.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // Cone4
-            // 
-            this.Cone4.BackColor = System.Drawing.Color.Red;
-            this.Cone4.Location = new System.Drawing.Point(55, 290);
-            this.Cone4.Name = "Cone4";
-            this.Cone4.Size = new System.Drawing.Size(40, 80);
-            this.Cone4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.Cone4.TabIndex = 13;
-            this.Cone4.TabStop = false;
-            // 
-            // Cone6
-            // 
-            this.Cone6.BackColor = System.Drawing.Color.Red;
-            this.Cone6.Location = new System.Drawing.Point(55, 512);
-            this.Cone6.Name = "Cone6";
-            this.Cone6.Size = new System.Drawing.Size(40, 80);
-            this.Cone6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.Cone6.TabIndex = 14;
-            this.Cone6.TabStop = false;
-            // 
-            // Cone5
-            // 
-            this.Cone5.BackColor = System.Drawing.Color.Red;
-            this.Cone5.Location = new System.Drawing.Point(275, 424);
-            this.Cone5.Name = "Cone5";
-            this.Cone5.Size = new System.Drawing.Size(40, 80);
-            this.Cone5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.Cone5.TabIndex = 15;
-            this.Cone5.TabStop = false;
-            // 
-            // Cone7
-            // 
-            this.Cone7.BackColor = System.Drawing.Color.Red;
-            this.Cone7.Location = new System.Drawing.Point(110, 356);
-            this.Cone7.Name = "Cone7";
-            this.Cone7.Size = new System.Drawing.Size(40, 80);
-            this.Cone7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.Cone7.TabIndex = 16;
-            this.Cone7.TabStop = false;
-            // 
-            // timer2
-            // 
-            this.timer2.Enabled = true;
-            this.timer2.Interval = 50;
-            this.timer2.Tick += new System.EventHandler(this.timer2_Tick);
-            // 
-            // Cone0
-            // 
-            this.Cone0.BackColor = System.Drawing.Color.Red;
-            this.Cone0.Location = new System.Drawing.Point(220, 162);
-            this.Cone0.Name = "Cone0";
-            this.Cone0.Size = new System.Drawing.Size(40, 80);
-            this.Cone0.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.Cone0.TabIndex = 17;
-            this.Cone0.TabStop = false;
-            // 
-            // panel1
-            // 
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(105, 40);
-            this.panel1.TabIndex = 18;
-            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
-            // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.Orange;
-            this.panel2.Location = new System.Drawing.Point(45, 84);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(280, 343);
-            this.panel2.TabIndex = 19;
-            this.panel2.Visible = false;
-            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
-            // 
-            // label1
-            // 
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Comic Sans MS", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(259, -1);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(111, 41);
-            this.label1.TabIndex = 20;
-            this.label1.Text = "Press Enter to \r\nRestart";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -319,23 +319,23 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "2D Subway Surfers meet Mario Kart";
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyDown);
+            ((System.ComponentModel.ISupportInitialize)(this.Cone0)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Cone7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Cone5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Cone6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Cone4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Cone3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Cone2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Cone1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Car)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Cone2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Cone3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Cone4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Cone6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Cone5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Cone7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Cone0)).EndInit();
             this.ResumeLayout(false);
 
         }

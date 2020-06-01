@@ -79,5 +79,15 @@ namespace _2D_Subway_Surfers_meet_Mario_Kart.Properties {
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap cone2 {
+            get {
+                object obj = ResourceManager.GetObject("cone2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }
